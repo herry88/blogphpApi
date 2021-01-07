@@ -1,6 +1,9 @@
-<?php 
-   $conn =  new mysqli("localhost","root","","dbblog");
-    if(!$conn){
-        echo "Database Not Found";
-    }
-?>
+<?php
+$connect = new mysqli("localhost","root","","dbblog");
+
+if($connect) {
+	//echo "Conection Successfull";
+} else {
+	echo "Connection Failed";
+	exit();
+}
